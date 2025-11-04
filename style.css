@@ -1,0 +1,225 @@
+/* Tüm ekran */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+/* Navbar */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: black;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0066ff;
+}
+
+/* GİRİŞ hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url('./img/pat-hayden-yhym61XSVsI-unsplash.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.5);
+  padding: 40px 60px;
+  border-radius: 15px;
+}
+
+.hero .profil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+.hero span {
+  color: #00bfff;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin: 10px 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00bfff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0099cc;
+}
+
+/* HAKKIMDA */
+.hakkimda {
+  padding: 100px 0;
+  background: #f7f7f7;
+}
+
+.hakkimda h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2em;
+}
+
+.hakkimda-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.hakkimda-container img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.hakkimda-text {
+  flex: 1 1 300px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* HİZMETLER */
+.hizmetler {
+  background: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hizmetler h2 {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.hizmetler-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 85%;
+  margin: auto;
+}
+
+.hizmet {
+  background: #f0f6ff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  flex: 1 1 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.hizmet:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.hizmet h3 {
+  color: #0066ff;
+  margin-bottom: 10px;
+}
+
+/* İLETİŞİM */
+.iletisim {
+  background: #0066ff;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.iletisim h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.iletisim p {
+  margin-bottom: 25px;
+}
+
+/*FOOTER*/
+footer {
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  header {
+    padding: 15px 25px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content {
+    padding: 30px 20px;
+  }
+
+  .hakkimda-container {
+    flex-direction: column;
+  }
+}
